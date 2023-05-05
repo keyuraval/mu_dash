@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+
+.logo {
+    padding-left: 5rem;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    padding: 1.5rem;
+}
+
+.card {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    border: 2px solid green;
+    color: white;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+.image {
+    border-radius: 10px;
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    margin: 0.5rem;
+}
+
+.btn {
+    all: unset;
+    width: 75%;
+    /* background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%); */
+    /* background-color: #1b8b00;
+background-image: linear-gradient(314deg, #1b8b00 0%, #a2d240 74%); */
+    background-color: #dbf26e;
+    background-image: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
+    cursor: pointer;
+
+
+    color: #002244;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.modal {
+    margin: 0;
+    padding: 0.8rem;
+    width: 25vw;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    /* background-color: #36096d;
+background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%); */
+    /* background-color: #5078f2;
+background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%); */
+
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    /* -webkit-box-shadow: 7px 6px 11px 0px rgba(255,255,255,1);
+-moz-box-shadow: 7px 6px 11px 0px rgba(255,255,255,1);
+box-shadow: 7px 6px 11px 0px rgba(255,255,255,1); */
+    -webkit-box-shadow: 7px 6px 11px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 7px 6px 11px 0px rgba(0, 0, 0, 1);
+    box-shadow: 7px 6px 11px 0px rgba(0, 0, 0, 1);
+
+
+
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.progress-container {
+    width: 0%;
+    animation: progress-animation .7s ease-in forwards;
+    margin: 0.2rem;
+}
+
+progress::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: attr(data-label);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0.5rem;
+    color: #002244;
+}
+
+.progressbar {
+    width: 100%;
+    height: 5vh;
+
+}
+
+@keyframes progress-animation {
+    to {
+        width: 100%;
+    }
+}
+
+.chart-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 2rem;
+}
+
+.chart {
+    width: 100%;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.close-btn {
+    margin: 0.2rem;
+}
