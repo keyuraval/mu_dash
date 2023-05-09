@@ -1,1 +1,1 @@
-Live Link : https://app.netlify.com/sites/nimble-bublanina-47ce2b/overview
+Live Link : https://nimble-bublanina-47ce2b.netlify.app/
